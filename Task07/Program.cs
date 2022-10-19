@@ -10,5 +10,9 @@ Console.Write("Введите трехзначное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
 
-int lastDigit = number % 10; //456 % 10 = 45 / 10 = 4 / 10 = 0;
-Console.WriteLine($"Последняя цифра числа = {lastDigit}");
+if (number > 99 && number < 1000)
+{
+    int lastDigit = number % 10; //456 % 10 = 45 / 10 = 4 / 10 = 0;
+    Console.WriteLine($"Последняя цифра числа = {lastDigit}");
+}
+else Console.WriteLine("Введите трёхзначное число!");
