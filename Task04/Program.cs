@@ -14,7 +14,6 @@ int max = number_1;
 
 if (number_2 > max) max = number_2;
 if (number_3 > max) max = number_3;
-if (number_1 > max) max = number_1;
 
 Console.Write("max = ");
 Console.WriteLine(max);
