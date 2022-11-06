@@ -14,7 +14,7 @@ int Quarter(int xc, int yc)    //создаем Метод (передаем в 
 {
     if(xc > 0 && yc > 0) return 1; //проверяем условия координат четвертям
     if(xc < 0 && yc > 0) return 2;
-    if(xc < 0 && yc < 0) return 3;
+    if(xc < 0 && yc < 0) return 3; 
     if(xc > 0 && yc < 0) return 4;
     return 0;    
 }                            //строки для вывода результата пользователю:
