@@ -7,7 +7,7 @@
 // 8 -> 36
 
 Console.Write("Введите число: ");
-int number = Convert.ToInt32(Console.ReadLine());
+int num = Convert.ToInt32(Console.ReadLine());
 
 int SumNumbers(int number)
 {
@@ -19,5 +19,5 @@ int SumNumbers(int number)
     }
     return sum;
 }
-int sumNumbers = SumNumbers(number);
-Console.WriteLine(sumNumbers);
+int sumNumbers = SumNumbers(num);
+Console.WriteLine($"Сумма чисел от 1 до {num} = {sumNumbers}");
