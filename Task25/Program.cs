@@ -6,30 +6,30 @@
 // 2, 4 -> 16
 
 Console.WriteLine("Введите число A: ");
-int numA = Convert.ToInt32(Console.ReadLine());
+int numberA = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine("Введите натуральное число B: ");
-int numB = Convert.ToInt32(Console.ReadLine());
+int numberB = Convert.ToInt32(Console.ReadLine());
 
-if (numB < 1)
+if (numberB < 1)
 {
     Console.WriteLine("Введите целое положительное число В");
 }
 else
 {
-    int numDegree = NumDegree(numA, numB);
-    Console.WriteLine($"Число {numA} в степени {numB} => {numDegree}");
+    int numDegree = NumDegree(numberA, numberB);
+    Console.WriteLine($"Число {numberA} в степени {numberB} => {numDegree}");
 }
 
-int NumDegree(int numberA, int numberB)
+int NumDegree(int numA, int numB)
 {
     int count = 1;
-    int numberC = 1;
-    while (count <= numberB)
+    int numC = 1;
+    while (count <= numB)
     {
-        numberC = numberC * numberA;
+        numC = numC * numA;
         count++;
     }
 
-    return numberC;
+    return numC;
 }
