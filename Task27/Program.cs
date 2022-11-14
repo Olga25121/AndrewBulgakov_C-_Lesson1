@@ -12,14 +12,14 @@ int num = Convert.ToInt32(Console.ReadLine());
 
 int SumDigit(int number)
 {
-   number = Math.Abs(number); //проверка на отрицательные числа
+    number = Math.Abs(number); //проверка на отрицательные числа
     int sum = 0;
     while (number > 0)
     {
-       sum = sum + number % 10;
-       number = number / 10;        
+       sum = sum + number % 10;  
+       number = number / 10;     
     }
     return sum;
 }
 int result = SumDigit(num);
-Console.WriteLine($"Сумма чисел в числе = {result}");
+Console.WriteLine($"Сумма цифр в числе -> {result}");
