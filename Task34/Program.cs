@@ -4,7 +4,7 @@
 
 // [345, 897, 568, 234] -> 2
 
-int[] CreateArrayRndInt(int size, int min, int max) // 1. Метод 
+int[] CreateArrayRndInt(int size, int min, int max) // 1. Массив псевдослучайных чисел
 {
     int[] array = new int[size];
     Random rnd = new Random();
@@ -24,7 +24,7 @@ void PrintArray(int[] array)                        //Выводим его в �
     }
     Console.WriteLine("]");
 }
-int GetCountElements(int[] array)
+int GetCountElements(int[] array)  //Метод: количество четных элементов массива
 {
     int count = 0;
     for (int i = 0; i < array.Length; i++)
