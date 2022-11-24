@@ -11,8 +11,8 @@ int num3 = Convert.ToInt32(Console.ReadLine());
 
 bool IsExsistTriangle(int number1, int number2, int number3)
 {
-    bool b = number1 < number2 + number3 && number2 < number1 + number3 && number3 < number1 + number2;
-    return b;
+     return number1 < number2 + number3 && number2 < number1 + number3 && number3 < number1 + number2;
+   
 }
 
 bool isExsistTriangle = IsExsistTriangle(num1, num2, num3);
