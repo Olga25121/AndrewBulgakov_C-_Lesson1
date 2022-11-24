@@ -54,7 +54,7 @@
 //     return result;
 // }
 
-// Console.WriteLine("Введите число десятичной системы исчисления");
+// System.Console.WriteLine("Введите число десятичной системы исчисления");
 // int number10 = Convert.ToInt32(Console.ReadLine());
 
 // int ConvertToBin(int num10)
@@ -75,22 +75,42 @@
 // int number2Rev = ConvertToBin(number10);
 // int number2 = ReverseNumber(number2Rev);
 // Console.WriteLine(number2);
-//  string
 
-Console.WriteLine(" введите число в десятичной системе");
-int number = Convert.ToInt32(Console.ReadLine());
+// 3.
+// Console.WriteLine(" введите число в десятичной системе");
+// int number = Convert.ToInt32(Console.ReadLine());
 
-int Binare(int num)
-{
-    string st = "";
-    while (num > 0)
-    {
-        string temp = Convert.ToString(num % 2);
-        st = temp + st;
-        num = num / 2;
-    }
+// int Binare(int num)
+// {
+//     string st = "";
+//     while (num > 0)
+//     {
+//         string temp = Convert.ToString(num % 2);
+//         st = temp + st;
+//         num = num / 2;
+//     }
 
-    int bin = Convert.ToInt32(st);
-    return bin;
-}
-System.Console.WriteLine($"Число {number} в двоичной системе выглядит {Binare(number)}");
+//     int bin = Convert.ToInt32(st);
+//     return bin;
+// }
+// System.Console.WriteLine($"Число {number} в двоичной системе выглядит {Binare(number)}");
+
+// 4. string
+
+// Console.WriteLine(" введите число в десятичной системе");
+// int number = Convert.ToInt32(Console.ReadLine());
+
+// int Binare(int num)
+// {
+//     string st = "";
+//     while (num > 0)
+//     {
+//         string temp = Convert.ToString(num % 2);
+//         st = temp + st;
+//         num = num / 2;
+//     }
+
+//     int bin = Convert.ToInt32(st);
+//     return bin;
+// }
+// System.Console.WriteLine($"Число {number} в двоичной системе выглядит {Binare(number)}");
