@@ -20,7 +20,7 @@ double[]FindPointOfIntersectionLines (double b11, double k11, double b22, double
     double x = (b22-b11) / (k11-k22);     //k1 * x + b1 = k2 * x + b2
     double y = k11*x + b11;               //(k1 - k2) * x = b2 - b1
     array[0] = x;                         //x = (b2 - b1) / (k1 - k2)
-     array[1] = y;                        //y = k1 * x + b1
+    array[1] = y;                         //y = k1 * x + b1
     return array;
 }                            
 
