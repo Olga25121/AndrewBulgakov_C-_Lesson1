@@ -8,17 +8,15 @@ Console.WriteLine("Введите количество чисел для вво�
 int num = Convert.ToInt32(Console.ReadLine());
 int[] arrayNumbers = new int[num];
 
-void InputNumbers(int num)
+void InputNumbers(int num)      //пользователь вводит числа заданного числа М
 {
-
-
     for (int i = 0; i < num; i++)
     {
         Console.Write($"Введите {i + 1} числo через Enter: ");
         arrayNumbers[i] = Convert.ToInt32(Console.ReadLine());
     }
-
 }
+
 void PrintArray(int[] array)                        //Выводим его в консоль
 {
     for (int i = 0; i < array.Length; i++)
@@ -28,7 +26,8 @@ void PrintArray(int[] array)                        //Выводим его в �
     }
     Console.WriteLine();
 }
-int ComparingNumbers(int[] massNumbers)
+
+int ComparingNumbers(int[] massNumbers)    //сравниваем числа с 0
 {
     int count = 0;
     for (int i = 0; i < massNumbers.Length; i++)
@@ -38,8 +37,8 @@ int ComparingNumbers(int[] massNumbers)
     return count;
 }
 InputNumbers(num);
-Console.WriteLine();
+Console.WriteLine();  //пустая строчка
 PrintArray(arrayNumbers);
-Console.WriteLine();
+Console.WriteLine();  //пустая строчка
 Console.WriteLine($"Вы ввели чисел больше 0 -> {ComparingNumbers(arrayNumbers)} ");
 
