@@ -27,12 +27,12 @@ void PrintArray(int[] array)                        //Выводим его в �
     Console.WriteLine();
 }
 
-int ComparingNumbers(int[] massNumbers)    //сравниваем числа с 0
+int ComparingNumbers(int[] arrayNumbers)    //сравниваем числа с 0
 {
     int count = 0;
-    for (int i = 0; i < massNumbers.Length; i++)
+    for (int i = 0; i < arrayNumbers.Length; i++)
     {
-        if (massNumbers[i] > 0) count = count + 1;
+        if (arrayNumbers[i] > 0) count = count + 1;
     }
     return count;
 }
