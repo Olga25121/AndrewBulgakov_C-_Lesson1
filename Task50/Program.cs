@@ -66,7 +66,7 @@ if (n > array.GetLength(0) && m > array.GetLength(1))
 {
     Console.WriteLine("Такого элемента нет в массиве");
 }
-else Console.WriteLine($"Значение искомого элемента строки {n} и столбца {m} -> {array[n-1, m-1]}");
+else Console.WriteLine($"Значение искомого элемента строки {n} и столбца {m} -> {array[n - 1, m - 1]}");
 
 
 void CreateMatrixRndInt(int[,] array)
@@ -87,10 +87,10 @@ void PrintArray(int[,] array)
     for (int i = 0; i < array.GetLength(0); i++)
     {
         Console.Write("|");
-         for (int j = 0; j < array.GetLength(1); j++)
+        for (int j = 0; j < array.GetLength(1); j++)
         {
-            if (j < array.GetLength(1) - 1) Console.Write($"{array[i, j], 3} |"); //форматирование
-            else Console.Write($"{array[i, j], 3}");
+            if (j < array.GetLength(1) - 1) Console.Write($"{array[i, j],3} |"); //форматирование
+            else Console.Write($"{array[i, j],3}");
         }
         Console.WriteLine("|");
     }
