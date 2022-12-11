@@ -46,16 +46,7 @@ void PrintMatrix(int[,] matrix)
         Console.WriteLine(" ]");
     }
 }
-void PrintArray(int[] array)
-{
-    Console.Write("[");
-    for (int i = 0; i < array.Length; i++)
-    {
-        if (i < array.Length - 1) Console.Write($"{array[i]},");
-        else Console.Write($"{array[i]}");
-    }
-    Console.WriteLine("]");
-}
+
 int[] MinElemArray(int[,] matrix)
 {
     int horizont = 0;
@@ -74,6 +65,16 @@ int[] MinElemArray(int[,] matrix)
         }
     }
     return new int[] { horizont, vertical };
+}
+void PrintArray(int[] array)
+{
+    Console.Write("[");
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (i < array.Length - 1) Console.Write($"{array[i]},");
+        else Console.Write($"{array[i]}");
+    }
+    Console.WriteLine("]");
 }
 int[,] CreateMatrixMax(int[,] matrix, int m, int n)
 {
