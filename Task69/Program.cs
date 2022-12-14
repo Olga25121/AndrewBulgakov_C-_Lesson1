@@ -13,5 +13,12 @@ int Exponantion(int numA, int numB)
     if (numB == 0)return 1;
     return numA * Exponantion(numA, numB-1);
 }
+while(numberB<0)
+{
+   Console.WriteLine("Введено отрицательное число или 0! "); 
+   Console.Write("Введите натуральное число B: ");
+   numberB = Convert.ToInt32(Console.ReadLine());
+
+}
 int exponantion = Exponantion(numberA, numberB);
 Console.WriteLine($"Возведение числа {numberA} в степень {numberB} = {exponantion}");
