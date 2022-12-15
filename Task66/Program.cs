@@ -24,31 +24,6 @@ int SumNaturalElements(int m, int n)
     {
         Console.Write($"{m} ");
     }
-
 }
 int sumNaturalElements = SumNaturalElements(numberM, numberN);
-Console.WriteLine($"Возведение числа {numberM} в степень {numberN} = {sumNaturalElements}");
-
-// Console.Write("Введите первое натуральное число: ");
-// int numberM = Convert.ToInt32(Console.ReadLine());
-// Console.Write("Введите второе натуральное число: ");
-
-
-// void NaturalNumbers(int m, int n)
-// {
-//     if (m < n)
-//     {
-//          Console.Write($"{m} ");
-//         NaturalNumbers(m + 1, n);
-//     }
-//     if (m > n)
-//     {
-//         Console.Write($"{m} ");
-//         NaturalNumbers(m - 1, n);
-//     }
-//     if (m == n)
-//     {
-//         Console.Write($"{m} ");
-//     }
-// }
-// NaturalNumbers(numberM, numberN);
+Console.WriteLine($"Сумма натуральных элементов в промежутке от {numberM} до {numberN} = {sumNaturalElements}");
